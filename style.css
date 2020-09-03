@@ -15,6 +15,7 @@ header{
     right: 0;
     left: 0;
     z-index: 1;
+    transition: 500ms;
 }
 
 header img {
@@ -23,8 +24,13 @@ header img {
 
 header li{
     display: inline;
-    color: white;
+    color: rgba(255, 255, 255, 0.58);
     margin: 30px;
+    transition: 300ms;
+}
+
+header li:hover{
+    color: rgb(255, 255, 255);
 }
 
 header a{
@@ -43,6 +49,20 @@ header a{
     height: 100%;
 }
 
+.dataCont{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 40%;
+    font-weight: normal;
+}
+
+.dataCont h2{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-weight: normal;
+}
+
 .overlayBlack{
     position: absolute;
     width: 100%;
@@ -54,9 +74,98 @@ header a{
     height: 50vh;
 }
 
+.socialBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 60%;
+    right: 0;
+    width: 5%;
+    height: 30%;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+.socialBar i{
+    color: white;
+    transition: 300ms;
+}
+
+.socialBar i:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+/*_________________HAMBURGER_____________________*/
+
+
+.container {
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
 /*_________________Footer_____________________*/
 
 footer{
     background-color: #867d6c;
     height: 50vh;
+}
+
+/*______________________________MOBILE___________________________________________*/
+
+@media only screen and (max-width: 750px) {
+
+    header{
+        padding: 30px;
+    }
+
+    header li{
+        display: none;
+    }
+
+    .dataCont{
+        top: 18%;
+        left: 10%;
+        width: 70%;
+        font-weight: normal;
+    }
+
+    .socialBar{
+        width: 15%;
+        height: 30%;
+        border-radius: 10px;
+        transition: 500ms;
+    }
+
+    .introContainer img{
+        object-fit: cover;
+    }
+
+    .container{
+        display: inline-block;
+    }
+
 }

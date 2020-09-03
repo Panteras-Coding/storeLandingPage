@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./style.css">
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/27a1b6d948.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
+        <header id="header">
             <img alt="Logo" src="./Assets/logo.png"/>
             <ul>
                 <a href="#"><li>Inicio</li></a>
@@ -16,12 +18,30 @@
                 <a href="#"><li>Conócenos</li></a>
                 <a href="#"><li>Contacto</li></a>
             </ul>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </header>
 
         <div class="introContainer">
             <div class="overlayBlack">
             </div>
             <img alt="Intro" src="Assets/maountain.png">
+            <div class="dataCont">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</h2>
+            </div>
+        </div>
+
+        <div id="socBar" class="socialBar">
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-linkedin fa-2x"></i>
         </div>
 
         <div class="introInfo">
@@ -31,5 +51,6 @@
 
         </footer>
 
+    <script rel="script" type="text/javascript" src="index.js"></script>
     </body>
 </html>
