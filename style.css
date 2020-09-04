@@ -130,8 +130,19 @@ header a{
 /*_________________Footer_____________________*/
 
 footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #867d6c;
     height: 50vh;
+    color: white;
+    
+}
+
+footer h2{
+    font-weight: normal;
+    font-family: 'Comfortaa', cursive;
 }
 
 /*______________________________MOBILE___________________________________________*/
