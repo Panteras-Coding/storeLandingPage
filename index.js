@@ -13,6 +13,19 @@ function scrollFunction() {
 
 window.onscroll = function() {scrollFunction()};
 
-function myFunction(ham) {
+let isNavClosed = true;
+let overlay = document.getElementById('overlay');
+let ham = document.getElementById("ham")
+
+function openSideBarMenu() {
     ham.classList.toggle("change");
+
+    if(isNavClosed){
+        overlay.style.transform = "translateX(0)";
+        isNavClosed = false
+    } else {
+        overlay.style.transform = "translateX(100%)";
+        isNavClosed = true
+    }
 }
+

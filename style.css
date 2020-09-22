@@ -2,6 +2,7 @@
 body{
     margin: 0;
     font-family: 'Rubik', sans-serif;
+    background-color: #fafafa;
 }
 
 header{
@@ -71,7 +72,47 @@ header a{
 }
 
 .introInfo{
-    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+    flex-wrap: wrap;
+}
+
+.introCard{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    box-shadow: -2px 2px 8px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    transition: 300ms;
+    margin: 20px;
+}
+
+.introCard img{
+    width: 100%;
+    top: 0;
+    border-radius: 15px 15px 0 0;
+}
+
+.introCard:hover{
+    transform: translateY(-5px);
+    box-shadow: -2px 2px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.introCard h3{
+    color: gray;
+    text-align: center;
+    font-weight: normal;
+}
+
+.introCard p{
+    color: gray;
+    text-align: justify;
+    font-weight: normal;
+    margin: 0 20px;
 }
 
 .socialBar{
@@ -96,6 +137,12 @@ header a{
 .socialBar i:hover{
     transform: translateY(-2px);
     cursor: pointer;
+}
+
+.title{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: #5c564a;
 }
 
 /*_________________HAMBURGER_____________________*/
@@ -125,6 +172,19 @@ header a{
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*__________________________OVERLAY MENU___________________________*/
+
+.overlayMenu{
+    position: fixed;
+    top: 106px;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    background-color: rgba(43, 77, 90, 0.95);
+    transform: translateX(100%);
+    transition: 300ms;
 }
 
 /*_________________Footer_____________________*/
@@ -177,6 +237,24 @@ footer h2{
 
     .container{
         display: inline-block;
+    }
+
+    ul{
+        margin-top: 30px;
+    }
+
+    li{
+        list-style: none;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-weight: normal;
+        font-family: 'Comfortaa', cursive;
+        font-size: 18px;
     }
 
 }
