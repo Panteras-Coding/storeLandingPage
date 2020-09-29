@@ -58,6 +58,16 @@ header a{
     font-weight: normal;
 }
 
+.dataCont1{
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 86%;
+    height: 75%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+}
+
 .dataCont h2{
     color: white;
     font-family: 'Comfortaa', cursive;
